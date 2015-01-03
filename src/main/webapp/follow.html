@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to Hackbook!</title>
+
+<head>
+    <link rel="icon" type="image/png" href="images/h_16.png" />
+    <meta name="google-site-verification" content="NfNL8lOPuffv4wgQJDu7fMCFzl8jwMb0D3m3fl80aTw" />
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/logdfcelflpgcbfebibbeajmhpofckjh">
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script>
+    $(document).ready(function(){
+	    	$("#chrome_store_link").click( function() {
+				window.location = "https://chrome.google.com/webstore/detail/logdfcelflpgcbfebibbeajmhpofckjh";	
+				return false;
+			});			
+			$("#chrome_inline_link").click( function() {
+				if (chrome.app.isInstalled) {
+					alert("Hackbook is already installed.");
+				}
+				else
+				{	
+					chrome.webstore.install();
+				}
+				return false;
+			});
+    });
+    </script>
+    <style>
+        body {
+            color: white;
+        }
+        a:link {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="margin:0; text-align:center; font-family: arial, helvetica;background: url('images/footer_lodyas.png')">
+	<div style="padding-top:15px"> 
+    	<img src="images/hackbook_word_logo.png" style="margin-right:auto;margin-left:auto">
+	</div>
+    <div style="padding-top:15px"> 
+    	VIDEO HERE
+    </div>
+     <div style="padding-top:15px"> 
+    	<a href="follow.html"  style="font-weight:bold">Follow other users</a> | <a href="notifications.html">Receive notifications for your stuff</a> | <a href="deleted.html">View deleted comments</a>
+    </div>
+     <div style="padding-top:15px"> 
+   		<a id="chrome_inline_link" href="#"><img id="add_to_chrome_img" src="images/add_to_chrome.png" style="vertical-align:middle"></a>
+		<a id="chrome_store_link" href="#"><img id="chrome_web_store_img" src="images/chrome_web_store.png" style="vertical-align:middle;padding-left:5px"></a>
+	</div>
+</body>
+
+</html>
