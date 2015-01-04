@@ -7,9 +7,6 @@
     version="2.5">
   <display-name>Hackbook website</display-name>
   <welcome-file-list>
-  	<welcome-file>follow.html</welcome-file>
-  	<welcome-file>notifications.html</welcome-file>
-  	<welcome-file>deleted.html</welcome-file>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
     <welcome-file>index.jsp</welcome-file>
